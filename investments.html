@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>BankWise | Investment Lab</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="investments">
+
+
+<header class="site-header">
+
+
+<a
+    class="brand"
+    href="index.html">
+
+<span class="brand-mark">
+    ₿
+</span>
+
+<span class="brand-text">
+
+<strong>
+    BankWise
+</strong>
+
+<small>
+    Learn • Save • Invest • Secure
+</small>
+
+</span>
+
+</a>
+
+
+<button
+    class="mobile-menu"
+    onclick="toggleMobileMenu()">
+
+☰
+
+</button>
+
+
+<nav
+    class="main-nav"
+    id="mainNav">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="banking.html">
+Banking
+</a>
+
+<a href="simulator.html">
+Virtual Bank
+</a>
+
+<a
+    href="investments.html"
+    class="active">
+
+Invest
+
+</a>
+
+<a href="market.html">
+Market
+</a>
+
+<a href="quiz.html">
+Quiz
+</a>
+
+<a href="safety.html">
+Safety
+</a>
+
+<a href="student.html">
+Students
+</a>
+
+<a href="elderly.html">
+Elderly
+</a>
+
+</nav>
+
+
+<button
+    class="access-btn"
+    onclick="toggleAccessibility()">
+
+A+
+
+</button>
+
+</header>
+
+
+<main>
+
+
+<section class="inner-hero">
+
+<span class="eyebrow">
+INVESTMENT LAB
+</span>
+
+
+<h1>
+📈 Save. Understand. Grow.
+</h1>
+
+
+<p>
+Explore basic saving and investment concepts
+with simple calculators.
+</p>
+
+</section>
+
+
+<section class="section">
+
+
+<div class="feature-grid three">
+
+
+<article class="glass-card info-card reveal">
+
+<div class="icon-orb green">
+💰
+</div>
+
+<h3>
+Savings
+</h3>
+
+<p>
+Saving means keeping part of your available
+money for future needs and goals.
+</p>
+
+</article>
+
+
+<article class="glass-card info-card reveal">
+
+<div class="icon-orb blue">
+🏦
+</div>
+
+<h3>
+Fixed Deposit
+</h3>
+
+<p>
+An FD is a deposit product held for a chosen
+period according to the provider's terms.
+</p>
+
+</article>
+
+
+<article class="glass-card info-card reveal">
+
+<div class="icon-orb purple">
+🪙
+</div>
+
+<h3>
+Recurring Saving
+</h3>
+
+<p>
+Recurring saving means making regular
+contributions over time.
+</p>
+
+</article>
+
+
+</div>
+
+
+</section>
+
+
+<section class="section light-section">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+CALCULATORS
+</span>
+
+
+<h2>
+Make the numbers visible.
+</h2>
+
+
+<p>
+See how contribution, rate and time
+interact in simple educational examples.
+</p>
+
+
+</div>
+
+
+<div class="two-column">
+
+
+<div class="panel calculator-3d">
+
+
+<div class="calculator-icon">
+🏦
+</div>
+
+
+<h3>
+Fixed Deposit Estimator
+</h3>
+
+
+<label>
+Principal Amount
+</label>
+
+
+<input
+    id="fdPrincipal"
+    type="number"
+    placeholder="50000">
+
+
+<label>
+Annual Rate (%)
+</label>
+
+
+<input
+    id="fdRate"
+    type="number"
+    placeholder="7">
+
+
+<label>
+Duration (Years)
+</label>
+
+
+<input
+    id="fdYears"
+    type="number"
+    placeholder="5">
+
+
+<button
+    class="btn btn-primary full"
+    onclick="calcFD()">
+
+Calculate
+
+</button>
+
+
+<div
+    id="fdResult"
+    class="calculator-result">
+
+Enter values to see the estimate.
+
+</div>
+
+
+</div>
+
+
+
+<div class="panel calculator-3d">
+
+
+<div class="calculator-icon">
+📅
+</div>
+
+
+<h3>
+Monthly Saving Estimator
+</h3>
+
+
+<label>
+Monthly Amount
+</label>
+
+
+<input
+    id="saveMonthly"
+    type="number"
+    placeholder="2000">
+
+
+<label>
+Duration (Years)
+</label>
+
+
+<input
+    id="saveYears"
+    type="number"
+    placeholder="5">
+
+
+<label>
+Estimated Annual Growth (%)
+</label>
+
+
+<input
+    id="saveRate"
+    type="number"
+    placeholder="7">
+
+
+<button
+    class="btn btn-primary full"
+    onclick="calcSaving()">
+
+Calculate
+
+</button>
+
+
+<div
+    id="saveResult"
+    class="calculator-result">
+
+Enter values to see the estimate.
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<div class="notice">
+
+These are educational estimates.
+Actual financial products may use
+different rates, compounding methods,
+taxes and conditions.
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+<div>
+
+<a
+class="footer-brand"
+href="index.html">
+
+BankWise
+
+</a>
+
+<p>
+Investment education.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+Explore
+</h4>
+
+<a href="investments.html">
+Savings
+</a>
+
+<a href="investments.html">
+FD
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+Practice
+</h4>
+
+<a href="market.html">
+Virtual Market
+</a>
+
+<a href="simulator.html">
+Virtual Bank
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+Disclaimer
+</h4>
+
+<p>
+Educational estimates only.
+</p>
+
+</div>
+
+
+</footer>
+
+
+<div class="copyright">
+
+BankWise • Learn the basics before making real financial decisions.
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

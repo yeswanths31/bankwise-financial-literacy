@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>BankWise | Safety Centre</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body data-page="safety">
+
+
+<header class="site-header">
+
+
+<a
+    class="brand"
+    href="index.html">
+
+<span class="brand-mark">
+    ₿
+</span>
+
+<span class="brand-text">
+
+<strong>
+    BankWise
+</strong>
+
+<small>
+    Learn • Save • Invest • Secure
+</small>
+
+</span>
+
+</a>
+
+
+<button
+    class="mobile-menu"
+    onclick="toggleMobileMenu()">
+
+☰
+
+</button>
+
+
+<nav
+    class="main-nav"
+    id="mainNav">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="banking.html">
+Banking
+</a>
+
+<a href="simulator.html">
+Virtual Bank
+</a>
+
+<a href="investments.html">
+Invest
+</a>
+
+<a href="market.html">
+Market
+</a>
+
+<a href="quiz.html">
+Quiz
+</a>
+
+<a
+    href="safety.html"
+    class="active">
+
+Safety
+</a>
+
+<a href="student.html">
+Students
+</a>
+
+<a href="elderly.html">
+Elderly
+</a>
+
+</nav>
+
+
+<button
+    class="access-btn"
+    onclick="toggleAccessibility()">
+
+A+
+
+</button>
+
+</header>
+
+
+<main>
+
+
+<section class="inner-hero">
+
+<span class="eyebrow">
+SECURITY CENTRE
+</span>
+
+
+<h1>
+🛡️ Fraud & Digital Safety
+</h1>
+
+
+<p>
+
+Simple habits for safer
+digital banking and payments.
+
+</p>
+
+
+</section>
+
+
+<section class="section">
+
+
+<div class="safety-grid">
+
+
+<article class="safety-card reveal">
+
+<span>
+01
+</span>
+
+
+<div class="safety-icon">
+🔐
+</div>
+
+
+<h3>
+Never Share OTP
+</h3>
+
+
+<p>
+
+Keep OTPs and authentication
+information confidential.
+
+</p>
+
+</article>
+
+
+
+<article class="safety-card reveal">
+
+<span>
+02
+</span>
+
+
+<div class="safety-icon">
+🔢
+</div>
+
+
+<h3>
+Protect Your PIN
+</h3>
+
+
+<p>
+
+Keep ATM, card and UPI PINs
+private.
+
+</p>
+
+</article>
+
+
+
+<article class="safety-card reveal">
+
+<span>
+03
+</span>
+
+
+<div class="safety-icon">
+📱
+</div>
+
+
+<h3>
+Check UPI Requests
+</h3>
+
+
+<p>
+
+Verify the recipient and amount
+before approving a payment.
+
+</p>
+
+</article>
+
+
+
+<article class="safety-card reveal">
+
+<span>
+04
+</span>
+
+
+<div class="safety-icon">
+🎣
+</div>
+
+
+<h3>
+Avoid Suspicious Links
+</h3>
+
+
+<p>
+
+Do not enter banking credentials
+into unknown links.
+
+</p>
+
+</article>
+
+
+
+<article class="safety-card reveal">
+
+<span>
+05
+</span>
+
+
+<div class="safety-icon">
+📞
+</div>
+
+
+<h3>
+Beware of Pressure Calls
+</h3>
+
+
+<p>
+
+Be cautious when someone creates
+urgency and asks for confidential data.
+
+</p>
+
+</article>
+
+
+
+<article class="safety-card reveal">
+
+<span>
+06
+</span>
+
+
+<div class="safety-icon">
+🔑
+</div>
+
+
+<h3>
+Use Strong Passwords
+</h3>
+
+
+<p>
+
+Use strong and unique passwords
+where appropriate.
+
+</p>
+
+</article>
+
+
+</div>
+
+
+</section>
+
+
+<section class="section light-section">
+
+
+<div class="section-heading">
+
+<span class="eyebrow">
+SCAM CHECK
+</span>
+
+
+<h2>
+Would you trust this message?
+</h2>
+
+
+<p>
+Choose the safer response.
+</p>
+
+</div>
+
+
+<div class="scenario-box">
+
+
+<div class="scenario-message">
+
+"Your bank account will be blocked today.
+Share your OTP now to verify your account."
+
+</div>
+
+
+<div class="scenario-actions">
+
+
+<button
+    class="btn btn-danger"
+    onclick="checkScenario(false)">
+
+Share OTP
+
+</button>
+
+
+<button
+    class="btn btn-success"
+    onclick="checkScenario(true)">
+
+Stop & Verify
+
+</button>
+
+
+</div>
+
+
+<div
+    id="scenarioResult"
+    class="scenario-result">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+
+<div>
+
+<a
+    class="footer-brand"
+    href="index.html">
+
+BankWise
+
+</a>
+
+<p>
+Stay alert. Stay secure.
+</p>
+
+</div>
+
+
+<div>
+
+<h4>
+Safety
+</h4>
+
+<a href="safety.html">
+OTP
+</a>
+
+<a href="safety.html">
+UPI
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+Learn
+</h4>
+
+<a href="banking.html">
+Banking
+</a>
+
+<a href="elderly.html">
+Elderly Guide
+</a>
+
+</div>
+
+
+<div>
+
+<h4>
+Practice
+</h4>
+
+<a href="quiz.html">
+Quiz
+</a>
+
+</div>
+
+
+</footer>
+
+
+<div class="copyright">
+
+Educational awareness only.
+
+</div>
+
+
+<script src="app.js"></script>
+
+
+<script>
+
+function checkScenario(isSafe) {
+
+    const result =
+        document.getElementById(
+            "scenarioResult"
+        );
+
+
+    if (isSafe) {
+
+        result.className =
+            "scenario-result good";
+
+
+        result.textContent =
+            "✅ Good choice. Stop, avoid sharing confidential information and verify the issue independently through an official channel.";
+
+    }
+
+    else {
+
+        result.className =
+            "scenario-result bad";
+
+
+        result.textContent =
+            "❌ Unsafe choice. Never share OTPs or confidential authentication information because of an unexpected message.";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+</html>
